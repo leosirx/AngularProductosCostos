@@ -1,0 +1,85 @@
+
+$base-spacing-unit: 24px;
+$half-spacing-unit: $base-spacing-unit / 2;
+
+$color-form-highlight: #EEEEEE;
+
+h1 {
+    padding: 15px;
+    font-family: 'David Libre', serif;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    color: #faf5f5;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    background-color: #0e92c6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f7fafb;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+
+.table {
+	width:1000%;
+	border:1px solid $color-form-highlight;
+}
+
+.table-header {
+	display:flex;
+    padding: 5px;
+    justify-content: space-around;
+    font-family: 'David Libre', serif;
+    font-family: 'Inter', sans-serif;
+	width:100%;
+    font-weight: bolder;
+    color: white;
+	background:#0e92c6;
+    
+	
+}
+
+.table-row {
+	display:flex;
+	width:100%;
+	padding:($half-spacing-unit * 1.5) 0;
+	
+	&:nth-of-type(odd) {
+		background:$color-form-highlight;
+	}
+}
+
+.table-data, .header__item {
+	flex: 1 1 20%;
+	text-align:center;
+    font-family: 'David Libre', serif;
+    font-family: 'Inter', sans-serif;
+}
+  
+button {
+    padding: 10px 20px;
+    background-color: #0e92c6;
+    color: #fff;
+    font-family: 'David Libre', serif;
+    font-family: 'Inter', sans-serif;
+    font-weight: bolder;
+    border: none;
+    border-radius: 200px;
+    margin-top: 10px;
+    margin-left: 90%;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #0d83b2;
+  }
+  
